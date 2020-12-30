@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Maxon|Palmary Algerie</title>
+</head>
+<body>
+    
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="images/logo.png" alt="" class="logo"></a>
+            <div class="toggle" onclick="toggleMenu()">
+              
+            </div>
+
+            
+            <ul class="navigation">
+                <li><a href="#">الصفحة الرئيسية</a></li>
+                <li><a href="#">أنواع الشوكولاتة</a></li>
+                <li><a href="#">ما الجديد</a></li>
+                <li><a href="#">اتصل بنا</a></li>
+            </ul>
+        </header>
+
+        <div class="content">
+            <div class="textbox">
+                <h2>تمتع بدوق الشكولاطة مع ماكسون</h2>
+                <p>ألواح شوكولاته ماكسون اللذيذة بالأطعمة المتعددة ( حليب ، فراولة ، لوز ، بندق ، كراميل ، برتقال ، كريمة الكاكاو ، الدارك )</p>
+                <a href="#">أعرف أكثر</a>
+            </div>
+       
+         <!-- Swiper -->
+        <div class="image__slide">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" ><img src="images/orange-removebg-preview.png" alt=""></div>
+                  <div class="swiper-slide" ><img src="images/maxon_milk-removebg-preview.png" alt=""></div>
+                  <div class="swiper-slide" ><img src="images/maxon_au_lait-removebg-preview.png" alt=""></div>
+                  <div class="swiper-slide" ><img src="images/noisette-removebg-preview.png" alt=""></div>
+                  <div class="swiper-slide" ><img src="images/noisette2-removebg-preview.png" alt=""></div>
+           
+                </div>
+            </div>     
+    </div>
+        </div>
+        <ul class="social">
+            <li><a href=""><i class='bx bxl-facebook-circle bx-tada' ></i></a></li>
+            <li><a href=""><i class='bx bxl-instagram-alt bx-tada' ></i></a></li>
+            <li><a href=""><i class='bx bxl-twitter bx-tada' ></i></a></li>
+        </ul>
+
+
+    </section>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 200,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      loop: true
+    });
+
+    //toggle
+    
+    const toggleMenu = ()=>{
+        const menuToggle = document.querySelector('.toggle')
+        const navigation = document.querySelector('.navigation')
+        menuToggle.classList.toggle('active')
+        navigation.classList.toggle('active')
+
+    }
+   
+
+
+  </script>
+</body>
+</html>
